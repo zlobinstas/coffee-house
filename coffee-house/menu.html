@@ -99,9 +99,9 @@
 <header class="header">
     <div class="container">
         <div class="header__inner">
-            <div class="header__logo">
+            <a href="index.html" class="header__logo">
                 <img src="img/logo.png" alt="Coffee shop">
-            </div>
+            </a>
             <div class="nav">
                 <a href="" class ="nav__link">Favorite coffee</a>
                 <a href="" class ="nav__link">About</a>
@@ -109,11 +109,13 @@
                 <a href="" class ="nav__link">Contact us</a>                    
             </div>
 
-            <a class="menu --und" href="index.html">
-                <span class="menu__item">Menu</span>
-                <svg class="social__icon">
-                    <use xlink:href="#coffee_cup"></use>
-                </svg>
+            <a href="index.html">
+                <div class="menu --und">
+                    <span class="menu__item">Menu</span>
+                    <svg class="social__icon">
+                        <use xlink:href="#coffee_cup"></use>
+                    </svg>
+                </div>
             </a>
         </div> <!-- /header__inner -->
     </div> <!-- /container -->
@@ -124,24 +126,24 @@
 <div class="title">
     <h1 class="title__title">Behind each of our cups <br /> hides an  <span class="text__accent">amazing surprise</span></h1>
     <div class="title__pick">
-        <button class="menu__pos">
+        <a class="menu__pos --act">
             <div class="menu__pos__img">
                 <img src="img/menu_icons/coffee.png" alt="">
             </div>
             <span>Coffee</span>
-        </button>
-        <button class="menu__pos">
+        </a>
+        <a class="menu__pos">
             <div class="menu__pos__img">
                 <img src="img/menu_icons/tea.png" alt="">
             </div>
             <span>Tea</span>
-        </button>
-        <button class="menu__pos">
+        </a>
+        <a class="menu__pos">
             <div class="menu__pos__img">
                 <img src="img/menu_icons/dessert.png" alt="">
             </div>
             <span>Dessert</span>
-        </button>
+        </a>
     </div> <!-- /title__pick -->
 </div> <!-- /title -->
 
@@ -256,19 +258,23 @@
             <div class="footer__address">
                 <h4 class="contact">Contact us</h4>
                 <address class="address">
-                    <div class="address__row">
-                        <svg class="social__icon">
-                            <use xlink:href="#geo"></use>
-                        </svg>
-                        <span class="address__row__desc">8558 Green Rd., LA</span>
-                    </div>
+                    <a href="https://www.google.com/maps/search/8558+Green+Rd.,+LA/@34.0206085,-118.7413801,10z/data=!3m1!4b1?entry=ttu" target="_blank">
+                        <div class="address__row">
+                            <svg class="social__icon">
+                                <use xlink:href="#geo"></use>
+                            </svg>
+                            <span class="address__row__desc">8558 Green Rd., LA</span>
+                        </div>
+                    </a>
                         
-                    <div class="address__row">
-                        <svg class="social__icon">
-                            <use xlink:href="#phone"></use>
-                        </svg>
-                        <span class="address__row__desc">+1 (603) 555-0123</span>
-                    </div>
+                    <a href="https://www.google.com/search?q=%2B1+(603)+555-0123&rlz=1C5CHFA_enIT1078IT1081&oq=%2B1+(603)+555-0123&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDc3NmowajE1qAIAsAIA&sourceid=chrome&ie=UTF-8" target="_blank">
+                        <div class="address__row">
+                            <svg class="social__icon">
+                                <use xlink:href="#phone"></use>
+                            </svg>
+                            <span class="address__row__desc">+1 (603) 555-0123</span>
+                        </div>
+                    </a>
 
                     <div class="address__row">
                         <svg class="social__icon">

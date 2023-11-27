@@ -29,6 +29,10 @@ a {
     text-decoration: none;
 }
 
+a.address__row:active {
+    text-decoration: none;
+}
+
 .container {
     width: 100%;
     max-width: 1360px;
@@ -281,7 +285,7 @@ a {
 }
 
 .controls__left, 
-.contorls__right {
+.controls__right {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -293,14 +297,34 @@ a {
     background-color: transparent;
     border: 1px solid #665F55;
     border-radius: 100px;
-
+    cursor: pointer;
 }
+
+.controls__left:hover,
+.controls__right:hover {
+    background-color: #665F55;
+}
+
+.controls__left > .social__icon {
+    stroke: #403F3D;
+}
+
+.controls__right > .social__icon {
+    stroke: #403F3D;
+}
+
+.controls__left:hover > .social__icon,
+.controls__right:hover > .social__icon {
+    stroke: #E1D4C9;
+}
+
+
 
 .controls__left {
     left: 5px;
 }
 
-.contorls__right {
+.controls__right {
     right: 5px;
 }
 
@@ -329,7 +353,7 @@ a {
     overflow: hidden;
 }
 
-gallery__item__img {
+.gallery__item__img {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -385,6 +409,19 @@ gallery__item__img {
     padding-left: 20px;
 }
 
+.button:hover {
+    background-color: #665F55;
+    color: #E1D4C9;
+}
+
+.button > .button__icon {
+    fill: #403F3D;
+}
+
+.button:hover > .button__icon {
+    fill: #E1D4C9;
+}
+
 .button__icon {
     width: 36px;
     height: 36px;
@@ -433,6 +470,10 @@ gallery__item__img {
     margin-right: 12px;
 }
 
+.social__item:hover {
+    background-color: #E1D4C9;
+}
+
 .footer__describe {
     font-size: 60px;
     font-weight: 600;
@@ -453,6 +494,7 @@ gallery__item__img {
 }
 
 .footer__address {
+    margin-top: 20px;
     color: #E1D4C9;
 }
 
@@ -467,15 +509,19 @@ gallery__item__img {
 .address__row {
     display: flex;
     margin-bottom: 20px;
+    color: #E1D4C9;
+    align-items: center;
 }
 
 .address__row__desc {
     margin-left: 4px;
+    cursor: pointer;
 }
 
-.address__row:last-child {
-    margin-bottom: 0;
+.address__row__desc:hover {
+    border-bottom: 2px solid #E1D4C9;
 }
+
 
 /* ------------ MENU ------------ */
 
@@ -515,8 +561,13 @@ gallery__item__img {
     color: #403F3D;
 }
 
-button > span {
-    margin: 11px;
+.--act {
+    background-color: #665F55;
+    color: #E1D4C9;
+}
+
+a > span {
+    margin: 11px 16px 11px 8px;
 }
 
 .menu__pos__img {
@@ -528,6 +579,7 @@ button > span {
     justify-content: center;
     background-color: #C1B6AD;
     border-radius: 100px;
+    margin-left: 8px;
 }
 
 /* !!! GALLERY !!! */
