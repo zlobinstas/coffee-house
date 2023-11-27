@@ -20,7 +20,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    margin: 0 0 10px;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -85,6 +91,10 @@ p {
 }
 
 .menu:hover {
+    border-bottom: 2px solid #403F3D;
+}
+
+.--und {
     border-bottom: 2px solid #403F3D;
 }
 
@@ -386,6 +396,7 @@ gallery__item__img {
     font-weight: 600;
     padding-left: 8px;
     text-align: left;
+    height: 40px;
 }
 
 .bold {
@@ -464,4 +475,113 @@ gallery__item__img {
 
 .address__row:last-child {
     margin-bottom: 0;
+}
+
+/* ------------ MENU ------------ */
+
+/* !!! TITLE !!! */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.title__title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: center;
+    height: 150px;
+    margin: 0 auto 40px;
+}
+
+.title__pick {
+    display: flex;
+    gap: 16px;
+}
+
+.menu__pos {
+    display: flex;
+    background-color: transparent;
+    border-radius: 100px;
+    height: 46px;
+    align-items: center;
+    border: 1px solid #C1B6AD;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #403F3D;
+}
+
+button > span {
+    margin: 11px;
+}
+
+.menu__pos__img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-repeat: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #C1B6AD;
+    border-radius: 100px;
+}
+
+/* !!! GALLERY !!! */
+
+.gallery {
+    margin-bottom: 100px;
+}
+
+.gallery__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+}
+
+.gallery__item {
+    border: 1px solid #C1B6AD;
+    border-radius: 40px;
+    height: 508px;
+}
+
+.item__picture {
+    display: flex;
+    width: 310px;
+    height: 310px;
+    align-items: center;
+    
+    margin-bottom: 20px;
+}
+
+.item__img {
+    width: 100%;  
+    height: 100%;
+    border-radius: 40px;
+}
+
+.item__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 20px 20px 12px;
+}
+
+.item__describe {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 72px;
+    margin: 0px 20px 12px;
+}
+
+.item__price {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0px 20px;
 }

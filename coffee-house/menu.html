@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee shop</title>
+    <title>Menu</title>
     <link rel="icon" type="image/x-icon" href="/img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
-
-    <!-- Sprite -->
+<!-- Sprite -->
 
 <svg style="display: none">
 
@@ -97,7 +94,7 @@
 
 </svg>
 
-<!-- Sprite -->
+<!-- header -->
 
 <header class="header">
     <div class="container">
@@ -112,128 +109,123 @@
                 <a href="" class ="nav__link">Contact us</a>                    
             </div>
 
-            <a class="menu" href="menu.html">
+            <a class="menu --und" href="index.html">
                 <span class="menu__item">Menu</span>
                 <svg class="social__icon">
                     <use xlink:href="#coffee_cup"></use>
                 </svg>
             </a>
         </div> <!-- /header__inner -->
-    </div> <!-- /conainer -->
+    </div> <!-- /container -->
 </header>
 
-<!-- Intro -->
+<!-- Title -->
 
-<div class="intro">
-    <div class="container">
-        <div class="intro__inner">
-            <h1 class="intro__title --h1"><span class="text__accent">Enjoy</span> premium coffee at our charming cafe</h1>
-            <div class="intro__describe">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</div>
-            <button class="intro__menu">
-                <span class="intro__menu__text">Menu</span>
-                <svg class="social__icon"> 
-                    <use xlink:href="#coffee_cup"></use>
-                </svg>
-            </button>
-        </div> <!-- /intro__inner-->
-    </div> <!-- /conainer -->
-</div> <!-- /intro -->
-
-<!-- favorite-->
-
-<div class="favorite">
-    <div class="container">
-
-        <div class="favorite__title">Choose your <span class="text__accent">favorite</span> coffee</div>
-        <div class="favorite__item">
-            <div class="favorite__item__foto">
-                <img class="favorite__item__img" src="img/coffee_slider/coffee-slider-1.png" alt="">
+<div class="title">
+    <h1 class="title__title">Behind each of our cups <br /> hides an  <span class="text__accent">amazing surprise</span></h1>
+    <div class="title__pick">
+        <button class="menu__pos">
+            <div class="menu__pos__img">
+                <img src="img/menu_icons/coffee.png" alt="">
             </div>
-            <div class="favorite__item__name">S’mores Frappuccino</div>
-            <div class="favorite__item__describe">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</div>
-            <div class="favorite__item__price">$5.50</div>
-        </div>
+            <span>Coffee</span>
+        </button>
+        <button class="menu__pos">
+            <div class="menu__pos__img">
+                <img src="img/menu_icons/tea.png" alt="">
+            </div>
+            <span>Tea</span>
+        </button>
+        <button class="menu__pos">
+            <div class="menu__pos__img">
+                <img src="img/menu_icons/dessert.png" alt="">
+            </div>
+            <span>Dessert</span>
+        </button>
+    </div> <!-- /title__pick -->
+</div> <!-- /title -->
 
-        <div class="favorite__sliders">
-            <div class="sliders__block --active"></div>
-            <div class="sliders__block"></div>
-            <div class="sliders__block"></div>
-        </div>
-
-        <div class="favorite__controls">
-            <button class="controls__left">
-                <svg class="social__icon">
-                    <use xlink:href="#vector_left"></use>
-                </svg>
-            </button>
-            <button class="contorls__right">
-                <svg class="social__icon">
-                    <use xlink:href="#vector_right"></use>
-                </svg>
-            </button>
-        </div> <!-- /favorite__controls -->
-        
-    </div> <!-- /conainer -->
-</div> <!-- /favorite -->
-
-<!-- /Gallery -->
+<!-- gallery -->
 
 <div class="gallery">
     <div class="container">
-        <div class="gallery__title">Resource is <span class="text__accent">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</div>
-        <div class="gallery__collage">
-            <div class="gallery__item">
-                <img class="gallery__item__img" src="img/gallery/about-1.png" alt="">
-            </div>
-            <div class="gallery__item">
-                <img class="gallery__item__img" src="img/gallery/about-3.png" alt="">
-            </div>
-            <div class="gallery__item">
-                <img class="gallery__item__img" src="img/gallery/about-2.png" alt="">
-            </div>
-            <div class="gallery__item">
-                <img class="gallery__item__img" src="img/gallery/about-4.png" alt="">
-            </div>
-        </div>
-    </div> <!-- /conainer -->
-</div> <!-- /gallery -->
+        <div class="gallery__inner">
 
-<!-- /App -->
+            <div class="gallery__item">
+                <div class="item__picture">
+                    <img class="item__img" src="img/menu-gallery/coffee-1.png" alt="">
+                </div>
+                <div class="item__title">Irish coffee</div>
+                <div class="item__describe">Fragrant black coffee with Jameson Irish whiskey and whipped milk</div>
+                <div class="item__price">$7.00</div>
+            </div>
 
-<div class="container">
-    <div class="app">
-    
-        <div class="app__inner">
-            <div class="app__inner__title"><span class="text__accent">Download</span> our apps to start ordering</div>
-            <div class="app__inner__describe">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</div>
-            <div class="app__download">
-                <button class="button">
-                    <svg class="button__icon"> 
-                        <use xlink:href="#apple__market"></use>
-                    </svg>
-                    <span class="button__text">
-                        <span>Available on the<br /></span>
-                        <span class="bold">App Store</span>
-                    </span>
-                    
-                </button>
-                <button class="button">
-                    <svg class="button__icon"> 
-                        <use xlink:href="#google__market"></use>
-                    </svg>
-                    <span class="button__text">
-                        <span>Available on<br /></span>
-                        <span class="bold">Google Play</span>
-                    </span>
-                </button>
+            <div class="gallery__item">
+                <div class="item__picture">
+                    <img class="item__img" src="img/menu-gallery/coffee-2.png" alt="">
+                </div>
+                <div class="item__title">Kahlua coffee</div>
+                <div class="item__describe">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</div>
+                <div class="item__price">$7.00</div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="item__picture">
+                    <img class="item__img" src="img/menu-gallery/coffee-3.png" alt="">
+                </div>
+                <div class="item__title">Honey raf</div>
+                <div class="item__describe">Espresso with frothed milk, cream and aromatic honey</div>
+                <div class="item__price">$5.50</div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="item__picture">
+                    <img class="item__img" src="img/menu-gallery/coffee-4.png" alt="">
+                </div>
+                <div class="item__title">Ice cappuccino</div>
+                <div class="item__describe">Cappuccino with soft thick foam in summer version with ice</div>
+                <div class="item__price">$5.00</div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="item__picture">
+                    <img class="item__img" src="img/menu-gallery/coffee-5.png" alt="">
+                </div>
+                <div class="item__title">Espresso</div>
+                <div class="item__describe">Classic black coffee</div>
+                <div class="item__price">$4.50</div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="item__picture">
+                    <img class="item__img" src="img/menu-gallery/coffee-6.png" alt="">
+                </div>
+                <div class="item__title">Latte</div>
+                <div class="item__describe">Espresso coffee with the addition of steamed milk and dense milk foam</div>
+                <div class="item__price">$5.50</div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="item__picture">
+                    <img class="item__img" src="img/menu-gallery/coffee-7.png" alt="">
+                </div>
+                <div class="item__title">Latte macchiato</div>
+                <div class="item__describe">Espresso with frothed milk and chocolate</div>
+                <div class="item__price">$5.50</div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="item__picture">
+                    <img class="item__img" src="img/menu-gallery/coffee-8.png" alt="">
+                </div>
+                <div class="item__title">Coffee with cognac</div>
+                <div class="item__describe">Fragrant black coffee with cognac and whipped cream</div>
+                <div class="item__price">$6.50</div>
             </div>
         </div>
-        <div class="app__foto">
-            <img class="app__foto__img" src="img/mobile-screens.png" alt="">
-        </div>
-       
-    </div> <!-- /app -->
-</div> <!-- /container -->
+    </div>
+</div>
+
 
 <!-- /Footer -->
 
