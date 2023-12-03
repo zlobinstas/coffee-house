@@ -92,6 +92,14 @@
         </g>
     </symbol>
 
+    <symbol id="refresh" fill="none" viewBox="0 0 24 24"> 
+        <g>
+            <path d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+
+        </g>
+    </symbol>
+
 </svg>
 
 <!-- header -->
@@ -117,6 +125,9 @@
                     </svg>
                 </div>
             </a>
+            <button class="burger">
+                <span class="burger__item">Menu</span>
+            </button>
         </div> <!-- /header__inner -->
     </div> <!-- /container -->
 </header>
@@ -124,7 +135,7 @@
 <!-- Title -->
 
 <div class="title">
-    <h1 class="title__title">Behind each of our cups <br /> hides an  <span class="text__accent">amazing surprise</span></h1>
+    <h1 class="title__title">Behind each of our cups hides an  <span class="text__accent">amazing surprise</span></h1>
     <div class="title__pick">
         <a class="menu__pos --act">
             <div class="menu__pos__img">
@@ -189,7 +200,7 @@
                 <div class="item__price">$5.00</div>
             </div>
 
-            <div class="menu__item">
+            <div class="menu__item --hidden">
                 <div class="item__picture">
                     <img class="item__img" src="img/menu-gallery/coffee-5.png" alt="">
                 </div>
@@ -198,7 +209,7 @@
                 <div class="item__price">$4.50</div>
             </div>
 
-            <div class="menu__item">
+            <div class="menu__item --hidden">
                 <div class="item__picture">
                     <img class="item__img" src="img/menu-gallery/coffee-6.png" alt="">
                 </div>
@@ -207,7 +218,7 @@
                 <div class="item__price">$5.50</div>
             </div>
 
-            <div class="menu__item">
+            <div class="menu__item --hidden">
                 <div class="item__picture">
                     <img class="item__img" src="img/menu-gallery/coffee-7.png" alt="">
                 </div>
@@ -216,7 +227,7 @@
                 <div class="item__price">$5.50</div>
             </div>
 
-            <div class="menu__item">
+            <div class="menu__item --hidden">
                 <div class="item__picture">
                     <img class="item__img" src="img/menu-gallery/coffee-8.png" alt="">
                 </div>
@@ -225,6 +236,11 @@
                 <div class="item__price">$6.50</div>
             </div>
         </div> <!-- /menu__inner -->
+        <div class="refresh">
+            <svg class="icon">
+                <use xlink:href="#refresh"></use>
+            </svg>
+        </div>
     </div> <!-- /container -->
 </div> <!-- /menu -->
 
@@ -239,17 +255,17 @@
                 <span class="text__accent">It’s coffee time!</span>
                 <div class="footer__social">
                     <a href="#" class="social__item" target="_blank">
-                        <svg class="social__icon">
+                        <svg class="social__icon soc">
                             <use xlink:href="#twitter"></use>
                         </svg>
                     </a>
                     <a href="#" class="social__item" target="_blank">
-                        <svg class="social__icon">
+                        <svg class="social__icon soc">
                             <use xlink:href="#instagram"></use>
                         </svg>
                     </a>
                     <a href="#" class="social__item" target="_blank">
-                        <svg class="social__icon">
+                        <svg class="social__icon soc">
                             <use xlink:href="#facebook"></use>
                         </svg>
                     </a>
@@ -284,6 +300,7 @@
                     </div>
                 </address>
             </div>
+            
         </div> <!-- /footer__inner -->
     </div> <!-- /container -->
 </footer> <!-- /footer -->
