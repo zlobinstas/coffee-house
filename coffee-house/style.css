@@ -460,8 +460,15 @@ a.address__row:active {
 }
 
 .app__foto {
-    margin-top: 10px;
     text-align: center;
+    width: 100%;
+    height: auto;
+    max-width: 640px;
+}
+
+.app__foto__img {
+    width: 100%;
+    height: 100%;
 }
 
 .button {
@@ -796,6 +803,10 @@ a > span {
         display: none;
     }
 
+    .app {
+        margin-bottom: 75px;
+    }
+
     .app__inner {
         width: 100%;
     }
@@ -871,9 +882,20 @@ a > span {
     .intro__describe {
         width: unset;
     }
+
+    .app__download {
+        flex-direction: column;
+        width: 200px;
+        margin: 0 10px 0 0;
+    }
+
+    .app__download > .button:first-child {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 380px) {
+
     .container {
         max-width: 388px;
         padding: 0 15px;
@@ -953,25 +975,10 @@ a > span {
         font-size: 32px;
     }
 
-    .app__download {
-        flex-direction: column;
-        width: 200px;
-        margin: 0 10px 0 0;
-    }
-
-    .app__download > .button:first-child {
-        margin-bottom: 20px;
-    }
-
     .app__foto {
         margin-top: 40px;
         width: 348px;
         height: 348px;
-    }
-
-    .app__foto__img {
-        width: 100%;
-        height: 100%;
     }
 
     .footer__describe {
