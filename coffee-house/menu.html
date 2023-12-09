@@ -102,6 +102,25 @@
 
 </svg>
 
+<!-- Burger menu -->
+
+<div class="burger__menu"> <!-- burger__active -->
+    <div class="container">
+        <ul class="nav__burger">
+            <li class="nav__item"><a href="index.html#favorite">Favorite coffee</a></li>
+            <li class="nav__item"><a href="index.html#gallery">About</a></li>
+            <li class="nav__item"><a href="index.html#app">Mobile app</a></li>
+            <li class="nav__item"><a href="index.html#footer">Contact us</a></li>
+        </ul>
+        <a href="menu.html" class="intro__menu --nav">
+            <span class="intro__menu__text">Menu</span>
+            <svg class="social__icon"> 
+                <use xlink:href="#coffee_cup"></use>
+            </svg>
+        </a>
+    </div>
+</div>
+
 <!-- header -->
 
 <header class="header">
@@ -111,25 +130,26 @@
                 <img src="img/logo.png" alt="Coffee shop">
             </a>
             <div class="nav">
-                <a href="index.html#favorite" class ="nav__link">Favorite coffee</a>
-                <a href="index.html#gallery" class ="nav__link">About</a>
-                <a href="index.html#app" class ="nav__link">Mobile app</a>
-                <a href="index.html#footer" class ="nav__link">Contact us</a>                    
+                <a href="#favorite" class ="nav__link">Favorite coffee</a>
+                <a href="#gallery" class ="nav__link">About</a>
+                <a href="#app" class ="nav__link">Mobile app</a>
+                <a href="#footer" class ="nav__link">Contact us</a>                    
             </div>
 
-            <a href="index.html">
-                <div class="menu__btn --und">
+            <a href="menu.html">
+                <div class="menu__btn">
                     <span class="menu__btn__item">Menu</span>
                     <svg class="social__icon">
                         <use xlink:href="#coffee_cup"></use>
                     </svg>
                 </div>
             </a>
-            <button class="burger">
-                <span class="burger__item">Menu</span>
+            <button class="burger"> <!-- burger__item__active -->
+                <span class="burger__item ">Menu</span>
             </button>
+
         </div> <!-- /header__inner -->
-    </div> <!-- /container -->
+    </div> <!-- /conainer -->
 </header>
 
 <!-- Title -->
@@ -304,6 +324,9 @@
         </div> <!-- /footer__inner -->
     </div> <!-- /container -->
 </footer> <!-- /footer -->
+
+<script src="script.js"></script>
+
 
 </body>
 </html>
