@@ -58,6 +58,8 @@ a.address__row:active {
     background-color: #E1D4C9;
     right: -100%;
     transition: .5s;
+    z-index: 5;
+
 }
 
 .burger__active {
@@ -69,7 +71,6 @@ a.address__row:active {
     top: 0;
     padding-bottom: 0;
     transition: .5s;
-    z-index: 1;
 }
 
 .nav__burger {
@@ -272,14 +273,26 @@ a.address__row:active {
 }
 
 .intro__inner {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 100px 20px 100px 0px;
-    background: #E1D4C9 url("img/inner__back.png") center no-repeat ;
+    background: #E1D4C9 url("img/inner__back.png") center no-repeat;
     background-size: cover;
     border-radius: 40px;
-    
+    overflow: hidden;
+}
+
+.intro__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1360px;
+    object-fit: cover;
 }
 
 .intro__title {
@@ -289,6 +302,7 @@ a.address__row:active {
     font-weight: 600;
     color: #E1D4C9;
     margin-left: 100px;
+    z-index: 1;
 }
 
 .text__accent {
@@ -304,6 +318,8 @@ a.address__row:active {
     line-height: 1.5;
     margin-top: 40px;
     margin-left: 100px;
+    z-index: 1;
+
 }
 
 .intro__menu {
@@ -320,6 +336,8 @@ a.address__row:active {
     margin-top: 40px;
     margin-left: 100px;
     cursor: pointer;
+    z-index: 1;
+
 }
 
 .intro__menu__text {
@@ -356,12 +374,18 @@ a.address__row:active {
 }
 
 .favorite__item {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     color: #403F3D;
     width: 480px;
     margin: 0 auto;
+    transition: all 1.2s ease-in-out;
+}
+
+.--item__active {
+    display: flex;
+    transition: all 1.2s ease-in-out;
 }
 
 .favorite__item__foto {
@@ -421,6 +445,7 @@ a.address__row:active {
 }
 
 .--active {
+    width: 40px;
     background-color: #665F55;
 }
 
@@ -776,6 +801,7 @@ a > span {
     border: 1px solid #C1B6AD;
     border-radius: 40px;
     height: 508px;
+    max-width: 310px;
     transition: transform .2s linear;
     cursor: pointer;
 }
@@ -952,6 +978,7 @@ a > span {
         border-radius: 50%;
         align-items: center;
         margin-top: 40px;
+        cursor: pointer;
     }
 
     .icon {
